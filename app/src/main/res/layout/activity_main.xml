@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#E4DFDF"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCL"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="Clear"/>
+
+        <Button
+            android:id="@+id/btnMul"
+            android:text="*"/>
+        <Button
+            android:id="@+id/btnDiv"
+            android:text="/"/>
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"/>
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"/>
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"/>
+        <Button
+            android:id="@+id/btnSub"
+            android:text="-"/>
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnEQ"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:text="." />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:text=" @copyright  Humendra Pun; 2019"
+        android:textStyle="bold" />
+
+</LinearLayout>
