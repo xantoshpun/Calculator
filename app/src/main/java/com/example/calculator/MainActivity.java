@@ -171,17 +171,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if (Sub == true) {
                     res.setText(num1 - num2 + "");
-                    Add = false;
+                    Sub = false;
                 }
 
                 if (Mul == true) {
                     res.setText(num1 * num2 +  "");
-                    Add = false;
+                    Mul = false;
                 }
 
                 if (Div == true) {
                     res.setText(num1 / num2 + "");
-                    Add = false;
+                    Div = false;
                 }
             }
         });
